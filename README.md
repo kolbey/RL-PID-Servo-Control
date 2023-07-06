@@ -81,4 +81,4 @@ python plot_result.py --choose_model search_electric --curve_type trapezoidal --
 - gym==0.17.3
 - numpy==1.91.3
 
-具体的库包依赖可以参看 'requirements.txt' 
+具体的库包依赖可以参看 `requirements.txt` 
