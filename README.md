@@ -1,5 +1,5 @@
 
-# 基于强化学习的伺服系统控制策略
+# 基于强化学习的伺服系统控制策略研究
 
 # introduce
 
@@ -24,9 +24,9 @@ python plot_result.py --choose_model class_pid --curve_type trapezoidal --height
 
 <div align=center>
     <span class='gp-n'>
-        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/ecValues.png' width="250" alt="ecValues"/>
-        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/iaeValues.png' width="250" alt="iaeValues"/>
-        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/radValues.png' width="250" alt="radValues"/>
+        <img src='https://github.com/kolbey/RL-PID-Servo-Control/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/ecValues.png' width="250" alt="ecValues"/>
+        <img src='https://github.com/kolbey/RL-PID-Servo-Control/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/iaeValues.png' width="250" alt="iaeValues"/>
+        <img src='https://github.com/kolbey/RL-PID-Servo-Control/blob/main/results/ChooseModel_class_pid_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_test/radValues.png' width="250" alt="radValues"/>
     </span>
 </div>
 
@@ -43,7 +43,7 @@ experimental operation process:
 
 <div align=center>
     <span class='gp-n'>
-        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_search_pid_parameter_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/reward.PNG' width="500" alt="epRewards_fig"/>
+        <img src='https://github.com/kolbey/RL-PID-Servo-Control/blob/main/results/ChooseModel_search_pid_parameter_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/reward.PNG' width="500" alt="epRewards_fig"/>
     </span>
 </div>
 
@@ -72,7 +72,7 @@ the result show:
 
 <div align=center>
     <span class='gp-n'>
-        <img src='https://github.com/tinyzqh/control-of-jump-systems-based-on-reinforcement-learning/blob/main/results/ChooseModel_search_electric_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/epRewards.png' width="500" alt="epRewards"/>
+        <img src='https://github.com/kolbey/RL-PID-Servo-Control/blob/main/results/ChooseModel_search_electric_CurveType_trapezoidal_Height_1000_DumpSystem_False_RunType_train/epRewards.png' width="500" alt="epRewards"/>
     </span>
 </div>
 
