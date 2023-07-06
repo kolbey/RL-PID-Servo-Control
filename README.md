@@ -3,7 +3,7 @@
 
 # 引言介绍
 
-这是对于论文 “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning” 的算法实现，如果想获取更多的信息，可以跳转到链接查看。
+这是对于论文 “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning” 的算法实现，如果想获取更多的信息，可以跳转到[链接](https://kolbey.github.io/2023/07/06/rl-pid-control/)查看。
 
 # 传统的PID控制
 
