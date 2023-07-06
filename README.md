@@ -1,22 +1,21 @@
 
 # 基于强化学习的伺服系统控制策略研究
 
-# introduce
+# 引言介绍
 
-This is the implementation of the paper “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning”.
+这是对于论文 “Control Strategy of Speed Servo Systems Based on Deep Reinforcement Learning” 的算法实现，如果想获取更多的信息，
 
-For more paper information, please checkout the the paper [Link](https://www.mdpi.com/1999-4893/11/5/65).
+可以跳转到链接查看。
 
+# 传统的PID控制
 
-# Class PID
-
-The class PID algorithms has no training process.
+传统的PID控制策略无需训练
 
 ```bash
 python run.py --choose_model class_pid --curve_type trapezoidal --height 1000 --run_type test
 ```
 
-Plot the result:
+画出结果曲线:
 
 ```bash
 python plot_result.py --choose_model class_pid --curve_type trapezoidal --height 1000 --run_type test
@@ -31,15 +30,15 @@ python plot_result.py --choose_model class_pid --curve_type trapezoidal --height
 </div>
 
 
-# Parameters Adjustment Of PID
+# 基于强化学习方法的PID参数整定控制策略
 
-Search the parameter of PID Based DDPG Algorithm.
+基于DDPG算法训练智能体自适应的对PID参数进行整定
 
 ```bash
 python run.py --choose_model search_pid_parameter --curve_type trapezoidal --height 1000 --run_type train
 ```
 
-experimental operation process:
+实验过程曲线:
 
 <div align=center>
     <span class='gp-n'>
@@ -48,27 +47,27 @@ experimental operation process:
 </div>
 
 
-# Electric Current Compensation Of RL-PID
+# 基于强化学习方法的PID电流补偿控制策略
 
+训练
 
 ```bash
 python run.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type train
 ```
 
-test
-
+测试
 
 ```bash
 python run.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type test
 ```
 
-Plot the result:
+画出结果曲线:
 
 ```bash
 python plot_result.py --choose_model search_electric --curve_type trapezoidal --height 1000 --run_type train
 ```
 
-the result show:
+曲线展示如下:
 
 <div align=center>
     <span class='gp-n'>
@@ -77,23 +76,11 @@ the result show:
 </div>
 
 
-# Dependencies
-
-The code was tested under Ubuntu 16 and uses these packages:
+# 库包依赖
 
 - tensorflow-gpu==1.14.0
 - atari-py==0.2.6
 - gym==0.17.3
 - numpy==1.91.3
 
-more packages described in requirements.txt
-
-
-Citing
-------
-If you find this open source release useful, please reference in your paper:
-
-
-> Chen P, He Z, Chen C, et al. (2018).
-> Control strategy of speed servo systems based on deep reinforcement learning[J].
-> *Algorithms, 2018, 11(5): 65.*.
+具体的库包依赖可以参看 'requirements.txt' 
